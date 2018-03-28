@@ -11,3 +11,4 @@ CMD /etc/kong/load_kong_conf.sh > /etc/kong/kong.conf ; \
     for d in $(find . -name *.rockspec -printf "%h\n") ; do (cd "$d" && luarocks make && cd -); done ; \
     kong start
 
+ADD patches/openresty/lua-resty-string/aes.lua /usr/local/openresty/lualib/resty/aes.lua  
