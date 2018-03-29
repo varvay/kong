@@ -2,7 +2,7 @@ FROM kong:0.11
 
 MAINTAINER Henrique Canto Duarte hcanto@cpqd.com.br
 
-RUN yum -y install unzip
+RUN yum -y update && yum -y install unzip openssl-devel
 
 ADD load_kong_conf.sh /etc/kong
 
