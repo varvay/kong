@@ -24,7 +24,7 @@ version: '2.1'
 services:
 
   db:
-    image: postgres:9.5.21-alpine
+    image: dojot/postgres:9.5.21-alpine
     environment:
       POSTGRES_DB: kong
       POSTGRES_USER: kong
