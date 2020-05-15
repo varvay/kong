@@ -8,7 +8,7 @@ source = {
   url = "https://github.com/dojot/kong.git"
 }
 description = {
-  summary = "A Kong plugin, that extract roles from a JWT token and make a request for a XACML Policy Decision Point (PDP)",
+  summary = "A Kong plugin, that extract roles from a JWT token and make a request for a Policy Decision Point (PDP)",
   license = "GPL"
 }
 dependencies = {
