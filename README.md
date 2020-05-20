@@ -20,7 +20,7 @@ curl -X POST \
 The configuration below shows how the image can be used with docker-compose:
 
 ``` yml
-version: '2.1'
+version: '3.7'
 services:
 
   db:
