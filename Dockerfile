@@ -11,3 +11,5 @@ WORKDIR /custom-plugins/pepkong
 RUN luarocks make
 
 USER kong
+
+
