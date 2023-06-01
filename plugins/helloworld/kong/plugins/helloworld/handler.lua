@@ -6,8 +6,8 @@ function PEPPlugin:new()
 	PEPPlugin.super.new(self, "helloworld")
 end
 
-function PEPPlugin:header_filter(conf)
-  PEPPlugin.super.header_filter(self)
+function PEPPlugin:body_filter(conf)
+  PEPPlugin.super.body_filter(self)
 	ngx.arg[1] = "Go sleep"
 end
 
