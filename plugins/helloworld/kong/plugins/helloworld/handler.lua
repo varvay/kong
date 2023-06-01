@@ -7,7 +7,7 @@ function PEPPlugin:new()
 end
 
 function PEPPlugin:access(conf)
-	kong.log.error("Hello World!")
+	ngx.log(ngx.NOTICE, "Hello World")
 end
 
 return PEPPlugin
