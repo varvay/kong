@@ -1,15 +1,13 @@
 local BasePlugin = require "kong.plugins.base_plugin"
-local access = require "kong.plugins.pepkong.pepmain"
 
 local PEPPlugin = BasePlugin:extend()
 
 function PEPPlugin:new()
-	PEPPlugin.super.new(self, "pepkong")
+	PEPPlugin.super.new(self, "helloworld")
 end
 
 function PEPPlugin:access(conf)
-	PEPPlugin.super.access(self)
-	access.run(conf)	
+	kong.log.error("Hello World!")
 end
 
 return PEPPlugin

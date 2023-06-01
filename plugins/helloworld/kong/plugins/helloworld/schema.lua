@@ -1,6 +1,6 @@
 return {
   fields = {
-    pdpUrl = {type = "string", required = true, },
+    pdpUrl = {type = "string", required = false, },
     pdpMode = {
                 type = "string",
                 enum = {"JWTForward", "JSON_XACML"},
