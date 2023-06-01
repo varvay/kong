@@ -6,8 +6,9 @@ function PEPPlugin:new()
 	PEPPlugin.super.new(self, "helloworld")
 end
 
-function PEPPlugin:access(conf)
-	ngx.log(ngx.NOTICE, "Hello World")
+function PEPPlugin:header_filter(conf)
+  PEPPlugin.super.header_filter(self)
+	ngx.arg[1] = "Go sleep"
 end
 
 return PEPPlugin
